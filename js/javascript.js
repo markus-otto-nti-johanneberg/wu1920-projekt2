@@ -1,3 +1,4 @@
+Learn more or give us feedback
 <script>
 function myFunction() {
   var checkBox = document.getElementById("myCheck");
@@ -29,6 +30,3 @@ slider.oninput = function() {
 }
 }
 
-
-
-</script>

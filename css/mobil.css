@@ -1,0 +1,133 @@
+ * { padding: 0;
+    margin: 0;
+}
+.kategorier{
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:black;
+    border-style: solid;
+    border-width: 5px;
+    top: 300;
+    border-radius: 1%;
+}
+section{
+    border-style: solid;
+      border-width: 2px;
+      margin-top: 1px;
+      background-blend-mode: color;
+      border-radius: 1%;
+
+  }
+  article{
+    margin: auto;
+    border-style: solid;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    border-radius: 1%;
+
+    grid-area: ar;
+
+  }
+  header{
+    margin: auto;
+    display: grid;
+    padding: auto;
+    border-style: solid;
+    border-width: 5px;
+    grid-area: he;
+
+  }
+h2{
+    margin: auto;
+    text-align: center;
+    border-style: solid;
+    font-size: medium;
+}
+body{
+    text-align: center;
+    display: grid;
+
+}
+a{
+
+    text-decoration: none;
+
+}
+placeholder{
+    padding: 0;
+
+}
+
+input {
+    text-align: center;
+}
+.pika {
+    width: 100px;
+    height: 40px;
+}
+body {
+    background-image:url('../img/ladda ned (1).jpg');
+}
+input {
+    margin-top: 0%;
+    margin-bottom: 0%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.kategorier1{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    color:black;
+    border-style: solid;
+    border-width: 5px;
+}
+img{
+    max-width: 100%;
+
+}
+aside{
+    border-style: solid;
+      border-width: 1px;
+      margin-top: 1px;
+      display: grid;
+      width: 250;
+      grid-area: as;
+
+  }
+.checkbox{
+    display: grid;
+    float: right;
+    }
+.slidecontainer {
+        width: 100%; /* Width of the outside container */
+      }
+footer {
+        border-style: solid;
+          border-width: 1px;
+          color: rgb(73, 109, 122);
+          grid-area: fo;
+      }
+c{
+    font-size: x-large;
+}
+b{
+    margin: 50px;
+}
+p{
+    font-size: x-large;
+}
+.grid-wrapper{
+    display: grid;
+    grid-template-areas: 
+    'he he he he he'
+    'as as ar . .  '
+    'fo fo fo fo fo '
+    ;
+}
+@media screen and (max-width: 600px) {
+    aside {
+      display: none;
+    }
+}
