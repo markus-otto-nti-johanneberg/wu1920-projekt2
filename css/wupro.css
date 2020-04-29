@@ -1,10 +1,12 @@
 
 .body {
   orientation: portrait;
+  display: grid; 
+  grid-template-rows: 2px;
 }
 .nav {
     display: grid;
-    grid-template-rows: 1;
+    grid-template-rows: 2;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     color: black;
     background-color: rgb(94, 94, 226);
@@ -13,9 +15,7 @@
     border:3px solid rgb(32, 33, 34);
     animation: colorchange 3s;
   animation-iteration-count:infinite;
-  position: fixed;
-  top: 0;
-    
+  top: relative;
  }
  .chadt{
     display: grid;
@@ -58,14 +58,15 @@ aside{
       margin-top: 1px;
       background-color: rgb(114, 114, 201);
       float: left;
-      max-width: 250px;
-      position: fixed;
+      width: 100px;
+      border-radius: 5px;
   }
 section{
   border-style: solid;
     border-width: 1px;
     margin-top: 1px;
     background-color: rgb(255, 255, 255);
+    border-radius: 4px;
 }
 section img {
   margin: auto;
@@ -86,6 +87,7 @@ flex-direction: column
 }
 header{
   top: 50;
+  margin-top: 10px;
 }
 .slidecontainer {
   width: 100%; /* Width of the outside container */
@@ -124,4 +126,23 @@ header{
   height: 25px; /* Slider handle height */
   background: #4CAF50; /* Green background */
   cursor: pointer; /* Cursor on hover */
+}
+.container {
+  grid-template-columns: 10px 10px auto 10px 10px;
+  grid-template-rows: 25% 100px auto;
+  grid-template-areas: 
+  'aside article article article'
+  'aside article article article' 
+
+}
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'container container container container container'
+    'footer footer footer footer footer';
+  grid-gap: 10px;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
 }
